@@ -4,8 +4,6 @@
 //1 2 3 4 5 6  7 
 6..fibo//13
 
-
-///////////
 'use strict'
 
 Object.defineProperty(Number.prototype, "fibo",
@@ -16,7 +14,7 @@ Object.defineProperty(Number.prototype, "fibo",
      	return 1
 	}
 })
-//////////е
+//////////
 
 function fibo(num)
 {
