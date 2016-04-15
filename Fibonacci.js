@@ -37,12 +37,14 @@ function fibo(num)
     var a = b = 1
         i = 2 
         sum = 0
-    while (i < num)
+        arr [0] = 1
+    while (i < num+1)
     {
         sum = b + a
         a = b
         b = sum
+        arr.push(sum)
         i ++
     }
-    return sum
+    return arr
 }
