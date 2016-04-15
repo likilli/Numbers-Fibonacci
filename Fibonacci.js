@@ -10,9 +10,23 @@ Object.defineProperty(Number.prototype, "fibo",
 {
 	get: function(num)
 	{
-		if ( this > 2)  return fibo( this - 1) + fibo(this - 2)
-     	return 1
-	}
+		var a = b = 1
+        i = 2 
+        sum = 0
+        arr = []
+
+        if (num > 2)
+            while (i < num+1)
+            {
+                sum = b + a
+                a = b
+                b = sum
+                arr.push(sum)
+                i ++
+            }
+        return arr.pop()
+        
+    }
 })
 //////////
 
@@ -37,7 +51,8 @@ function fibo(num)
     var a = b = 1
         i = 2 
         sum = 0
-        arr [0] = 1
+        arr = []
+
     while (i < num+1)
     {
         sum = b + a
@@ -46,5 +61,5 @@ function fibo(num)
         arr.push(sum)
         i ++
     }
-    return arr
+    return arr.pop()
 }
